@@ -1,9 +1,9 @@
-"""Biblioteca de la Facultad: caso del curso «Fundamentos de programación
-segura y criptografía básica».
+﻿"""Biblioteca de la Facultad: caso del curso Â«Fundamentos de programaciÃ³n
+segura y criptografÃ­a bÃ¡sicaÂ».
 
-ADVERTENCIA: este programa es VULNERABLE A PROPÓSITO. Sirve para practicar el
-análisis de código en un entorno local. No se debe exponer a internet ni
-reutilizar su código en sistemas reales.
+ADVERTENCIA: este programa es VULNERABLE A PROPÃ“SITO. Sirve para practicar el
+anÃ¡lisis de cÃ³digo en un entorno local. No se debe exponer a internet ni
+reutilizar su cÃ³digo en sistemas reales.
 """
 import hashlib
 import random
@@ -47,7 +47,7 @@ def login():
     finally:
         con.close()
     if not fila:
-        return "Credenciales inválidas", 401
+        return "Credenciales invÃ¡lidas", 401
     session["usuario"], session["rol"] = fila
     return "Bienvenido, %s (%s)" % fila
 
@@ -64,7 +64,7 @@ def buscar():
         return "<pre>" + traceback.format_exc() + "</pre>", 500
     finally:
         con.close()
-    items = "".join("<li>%s — %s (%s)</li>" % f for f in filas)
+    items = "".join("<li>%s â€” %s (%s)</li>" % f for f in filas)
     return "<h2>Resultados para: " + q + "</h2><ul>" + items + "</ul>"
 
 
@@ -96,4 +96,4 @@ def reset():
 inicializar()
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    app.run(host="127.0.0.1", port=8000, debug=True)
