@@ -1,6 +1,4 @@
-# Guía de la semana 1 (material de apoyo del docente y del estudiantado)
-> **Borrador.** Esta guía incluye al final notas de verificación para el docente; se depuran antes de compartirla con el estudiantado.
-
+# Guía de la semana 1
 
 Oct 31, 2026 · @Jaider Ospina Navas
 
@@ -17,14 +15,6 @@ Esta semana te lleva de ver la seguridad como un conjunto de controles de gesti�
 | Dedicación | 9 horas de trabajo autónomo (ver la ruta de trabajo) |
 | Evaluación | Firma del protocolo de anonimización y confidencialidad (requisito, sin calificación) |
 | Fuentes permitidas | Libros de la carpeta BIBLIOGRAFIA\_ROSARIO y documentación en línea de OWASP, nada más |
-
-### Supuestos que puedes ajustar
-
-1. **Metodología.** El proyecto ROSARIO no tiene documentos de metodología cargados. Usé la estructura de tu tabla (RAE, temas, actividad evaluativa) y añadí ficha, ruta horaria, laboratorio y autoevaluación. Si tienes la guía metodológica, dime y reordeno los títulos.
-2. **Público.** Estudiantes de posgrado que ya programan. Los ejemplos usan Python y SQLite porque los libros de la carpeta los usan (Fishpool y Sinha).
-3. **Material de autoría propia.** La «presentación narrada» y la «cartilla» de tu tabla no existen en la carpeta. Te dejo un guion para la presentación (Tema 1) y el texto base de la cartilla y del protocolo (Tema 3).
-4. **Citas de página.** «p. 225» es la página del visor PDF. Donde el libro trae numeración impresa la indico entre paréntesis. Fishpool no imprime número de página en el PDF, así que solo se cita la del visor.
-5. **Versiones.** Tu tabla cita ASVS 4.0 (2019) cap. V1. Lo mantengo y añado la versión vigente, ASVS 5.0.0 (mayo de 2025), y el OWASP Top 10:2025 en lugar del 2017 o 2021.
 
 ## Ruta de trabajo (9 horas)
 
@@ -193,7 +183,7 @@ La Guía del Desarrollador de OWASP añade que un diseño seguro establece valor
 
 El Application Security Verification Standard (ASVS) de OWASP es una lista de requisitos de seguridad verificables. Sirve para que tu requisito de la sección 1.7 use un vocabulario reconocido y para que otra persona pueda comprobarlo.
 
-- **ASVS 4.0, capítulo V1 (el de tu tabla).** Su objetivo es que la seguridad se considere en todas las fases del desarrollo, que se conozcan los roles funcionales y de seguridad de cada componente y que se entienda que probar la aplicación aislada no basta, porque los clientes dependen de servicios remotos (OWASP, 2017, revisión archivada del wiki). En la revisión archivada del wiki aparecen requisitos como identificar todos los componentes y confirmar que son necesarios, aplicar controles de seguridad en los servicios remotos y no solo en el cliente, identificar datos sensibles, producir un modelo de amenazas, centralizar los controles, considerar la seguridad en todo el SDLC, mantener componentes sin vulnerabilidades conocidas y tener una política explícita de gestión de claves (OWASP, 2017).
+- **ASVS 4.0, capítulo V1 (el que cita la organización de la asignatura).** Su objetivo es que la seguridad se considere en todas las fases del desarrollo, que se conozcan los roles funcionales y de seguridad de cada componente y que se entienda que probar la aplicación aislada no basta, porque los clientes dependen de servicios remotos (OWASP, 2017, revisión archivada del wiki). En la revisión archivada del wiki aparecen requisitos como identificar todos los componentes y confirmar que son necesarios, aplicar controles de seguridad en los servicios remotos y no solo en el cliente, identificar datos sensibles, producir un modelo de amenazas, centralizar los controles, considerar la seguridad en todo el SDLC, mantener componentes sin vulnerabilidades conocidas y tener una política explícita de gestión de claves (OWASP, 2017).
 - **ASVS 5.0.0 (mayo de 2025), la versión vigente.** Reorganizó el estándar: su capítulo 1 ahora es «Encoding and Sanitization» (OWASP, 2025b), y los temas de arquitectura pasaron al capítulo V15 «Secure Coding and Architecture», según el listado de 17 capítulos de la ficha de arc42 (s. f.), una página de terceros que debes contrastar con el estándar oficial.
 
 Qué hacer con esto: en la semana cita el V1 de ASVS 4.0 como pide la tabla del curso y, para trabajo nuevo, busca el requisito equivalente en ASVS 5.0.0. No pude verificar en línea la correspondencia exacta entre ambas versiones ni los números de requisito de 4.0.3; la numeración de arriba corresponde a la revisión archivada y debes confirmarla en el PDF oficial antes de publicar.
@@ -414,7 +404,7 @@ Responde sin mirar la guía y luego compara.
 | 6. Nombra los cuatro principios de diseño seguro de la hoja de OWASP. | Mínimo privilegio y separación de funciones, defensa en profundidad, confianza cero y seguridad en abierto | Sección 2.3 |
 | 7. ¿Qué cambió en el capítulo 1 de ASVS al pasar de 4.0 a 5.0? | Pasó de arquitectura y modelado de amenazas a «Encoding and Sanitization»; la arquitectura se ubica ahora en V15 (por confirmar) | Sección 2.4 |
 
-## Referencias y notas de verificación
+## Referencias
 
 ### Libros de la carpeta BIBLIOGRAFIA\_ROSARIO
 
@@ -436,19 +426,3 @@ Las páginas citadas son las del visor PDF. En González Manzano y De Fuentes la
 - OWASP. (s. f.-b). *OWASP SAMM v2: el modelo*. [owaspsamm.org/model](https://owaspsamm.org/model/)
 - OWASP. (s. f.-c). *Secure Product Design Cheat Sheet*. [cheatsheetseries.owasp.org](https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html)
 - OWASP. (s. f.-d). *OWASP Developer Guide: Design*. [devguide.owasp.org](https://devguide.owasp.org/en/04-design/)
-
-### Fuente ajena a tus dos fuentes permitidas
-
-- arc42. (s. f.). *OWASP Application Security Verification Standard (ASVS)*. [quality.arc42.org](https://quality.arc42.org/standards/owasp-asvs). La usé únicamente para el listado de capítulos de ASVS 5.0, porque la página de OWASP que consulté no lo mostraba. Si prefieres no citarla, abre el PDF de ASVS 5.0.0 y sustituye esa frase.
-
-### Qué debes confirmar antes de publicar
-
-1. **ASVS.** La numeración de requisitos de V1 viene de una revisión archivada del wiki, no del PDF de ASVS 4.0.3, y no verifiqué la equivalencia exacta con 5.0.0.
-2. **Clasificación del laboratorio.** La asignación del recorrido de rutas a A01 y los números CWE-22 y CWE-89 son de esta guía; no los verifiqué en las páginas de OWASP ni en el catálogo CWE.
-3. **Hoja de modelado de amenazas.** Leí una revisión archivada del wiki. La versión actual de la Cheat Sheet Series puede diferir y no pude abrirla desde esta sesión.
-4. **Cartilla y presentación.** No están en la carpeta; el guion y el texto del protocolo son propuestas de esta guía que debes revisar, y falta el artículo del reglamento académico en el punto 7.
-5. **Duración.** Los tiempos son estimaciones; mide con 2 o 3 estudiantes antes de fijarlos.
-
-### Qué revisé de la carpeta y no usé
-
-Revisé los 14 PDF por búsqueda de términos (ciclo de vida, amenaza, vulnerabilidad, OWASP, requisitos de seguridad). Los de criptografía, algoritmos, orientación a objetos, diagramas de flujo, computación cuántica y Python básico no tratan el ciclo de vida seguro. *Advanced Python Programming* menciona condiciones de carrera como riesgo de seguridad (pp. 483 y 639), útil para semanas posteriores. El archivo .azw es una copia del libro de Fishpool y no lo abrí.
